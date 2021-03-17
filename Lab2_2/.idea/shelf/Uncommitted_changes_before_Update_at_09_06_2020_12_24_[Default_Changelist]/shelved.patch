@@ -1,0 +1,269 @@
+Index: .idea/mpp.iml
+===================================================================
+--- .idea/mpp.iml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/mpp.iml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+--- .idea/.gitignore	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/.gitignore	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
+@@ -1,2 +0,0 @@
+-# Default ignored files
+-/workspace.xml
+Index: .idea/modules/mpp.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module version=\"4\">\r\n  <component name=\"ExternalSystem\" externalSystem=\"GRADLE\" externalSystemModuleGroup=\"td.ubb\" externalSystemModuleVersion=\"1.0-SNAPSHOT\" linkedProjectId=\"mpp\" linkedProjectPath=\"$MODULE_DIR$/../..\" rootProjectPath=\"$MODULE_DIR$/../..\" />\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$/../..\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/../../.gradle\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/../../build\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules/mpp.iml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/modules/mpp.iml	(date 1591694643335)
+@@ -1,7 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="td.ubb" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId="mpp" linkedProjectPath="$MODULE_DIR$/../.." rootProjectPath="$MODULE_DIR$/../.." />
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
++<module external.linked.project.id="mpp" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="td.ubb" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+     <exclude-output />
+     <content url="file://$MODULE_DIR$/../..">
+       <excludeFolder url="file://$MODULE_DIR$/../../.gradle" />
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"JavadocGenerationManager\">\r\n    <option name=\"OUTPUT_DIRECTORY\" value=\"$PROJECT_DIR$/docs\" />\r\n    <option name=\"OPTION_SCOPE\" value=\"package\" />\r\n  </component>\r\n  <component name=\"ProjectKey\">\r\n    <option name=\"state\" value=\"project://e2804f05-5315-4fc6-a121-c522a6c26470\" />\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"11\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/misc.xml	(date 1591694570183)
+@@ -1,13 +1,16 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="FrameworkDetectionExcludesConfiguration">
++    <file type="web" url="file://$PROJECT_DIR$" />
++  </component>
+   <component name="JavadocGenerationManager">
+-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/docs" />
++    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../docs/lab2" />
+     <option name="OPTION_SCOPE" value="package" />
+   </component>
+   <component name="ProjectKey">
+     <option name="state" value="project://e2804f05-5315-4fc6-a121-c522a6c26470" />
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11.0.4" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/$PRODUCT_WORKSPACE_FILE$
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/$PRODUCT_WORKSPACE_FILE$	(date 1583138555792)
++++ .idea/$PRODUCT_WORKSPACE_FILE$	(date 1583138555792)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="masterDetails">
++    <states>
++      <state key="ProjectJDKs.UI">
++        <settings>
++          <last-edited>12</last-edited>
++          <splitter-proportions>
++            <option name="proportions">
++              <list>
++                <option value="0.2" />
++              </list>
++            </option>
++          </splitter-proportions>
++        </settings>
++      </state>
++    </states>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/Lab2_2.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/Lab2_2.iml	(date 1583138585535)
++++ .idea/Lab2_2.iml	(date 1583138585535)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: src/main/java/UI/Console.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package UI;\r\n\r\nimport domain.LabProblem;\r\nimport domain.Student;\r\nimport domain.exceptions.ValidatorException;\r\nimport service.LabProblemService;\r\nimport service.StudentService;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.IOException;\r\nimport java.io.InputStreamReader;\r\nimport java.util.HashMap;\r\nimport java.util.Set;\r\n\r\n/** Console based user interface */\r\npublic class Console {\r\n  private StudentService studentController;\r\n  private LabProblemService lapProblemController;\r\n  private HashMap<String, Runnable> dictionaryOfCommands;\r\n\r\n  public Console(StudentService studentController, LabProblemService lapProblemController) {\r\n    this.studentController = studentController;\r\n    this.lapProblemController = lapProblemController;\r\n    dictionaryOfCommands = new HashMap<>();\r\n    dictionaryOfCommands.put(\r\n        \"add student\",\r\n        this::addStudent); // I use lambda methods with a hash table to not to make if statements\r\n    dictionaryOfCommands.put(\r\n        \"print students\",\r\n        this::printStudents); // if the thing fails it gets a null pointer exception\r\n    dictionaryOfCommands.put(\r\n        \"add lab problem\", this::addLabProblem); // which means not a valid command\r\n    dictionaryOfCommands.put(\"print lab problems\", this::printLabProblems);\r\n    dictionaryOfCommands.put(\"exit\", () -> System.exit(0));\r\n  }\r\n\r\n  /** Main loop of the user interface */\r\n  public void run() {\r\n    while (true) {\r\n      printMenu();\r\n      BufferedReader input = new BufferedReader(new InputStreamReader(System.in));\r\n      try {\r\n        String inputString = input.readLine();\r\n        dictionaryOfCommands.get(inputString).run();\r\n      } catch (ValidatorException ex) {\r\n        ex.printStackTrace();\r\n        System.out.println(ex.getMessage());\r\n      } catch (IOException ex) {\r\n        System.out.println(\"Error with input!\");\r\n      } catch (NullPointerException ex) {\r\n        System.out.println(\"Not a vaild comand\");\r\n      }\r\n    }\r\n  }\r\n\r\n  /**\r\n   * UI method for printing the console menu\r\n   */\r\n  private void printMenu(){\r\n    System.out.println(\"Menu options:\");\r\n    System.out.println(\"1. Add student\");\r\n    System.out.println(\"2. Print students\");\r\n    System.out.println(\"3. Add lab problem\");\r\n    System.out.println(\"4. Print lab problems\");\r\n    System.out.println(\"5. exit\");\r\n  }\r\n\r\n  /** UI method for adding a student */\r\n  private void addStudent() {\r\n    try {\r\n      Student newStudent = readStudent();\r\n      if (newStudent == null) {\r\n        System.out.println(\"Invalid input! ID must be positive number\");\r\n        return;\r\n      }\r\n      studentController.addStudent(newStudent);\r\n      System.out.println(\"Student added!\");\r\n    } catch (ValidatorException ex) {\r\n      // ex.printStackTrace();\r\n      System.out.println(ex.getMessage());\r\n    }\r\n  }\r\n  /** UI method for adding a lab problem */\r\n  private void addLabProblem() {\r\n    LabProblem newLabProblem = readLabProblem();\r\n    if (newLabProblem == null) {\r\n      System.out.println(\"Invalid input! ID must be positive number\");\r\n      return;\r\n    }\r\n    lapProblemController.addLabProblem(newLabProblem);\r\n    System.out.println(\"Lab Problem added\");\r\n  }\r\n  /** UI method for printing all students */\r\n  private void printStudents() {\r\n    Set<Student> students = studentController.getAllStudents();\r\n    students.forEach(System.out::println);\r\n  }\r\n  /** UI method for printing all lab problems */\r\n  private void printLabProblems() {\r\n    Set<LabProblem> students = lapProblemController.getAllLabProblems();\r\n    students.forEach(System.out::println);\r\n  }\r\n  /** UI method for reading a new lab problem from the user */\r\n  private LabProblem readLabProblem() {\r\n    System.out.println(\"Read lab problem {id, problem number, description}\");\r\n    LabProblem newLabProblem = null;\r\n    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));\r\n    try {\r\n      System.out.println(\"Enter id: \");\r\n      long id = Long.parseLong(input.readLine().strip());\r\n      System.out.println(\"Enter problem number: \");\r\n      int problemNumber = Integer.parseInt(input.readLine().strip());\r\n      System.out.println(\"Enter description: \");\r\n      String description = input.readLine().strip();\r\n      newLabProblem = new LabProblem(problemNumber, description);\r\n      newLabProblem.setId(id);\r\n    } catch (IOException | NumberFormatException ex) {\r\n      // ex.printStackTrace();\r\n    }\r\n    return newLabProblem;\r\n  }\r\n  /** UI method for reading a new student from the user */\r\n  private Student readStudent() {\r\n    System.out.println(\"Read student {id,serialNumber, name, group}\");\r\n\r\n    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));\r\n    Student newStudent = null;\r\n    try {\r\n      System.out.println(\"Enter id: \");\r\n      long id = Long.parseLong(input.readLine().strip());\r\n      System.out.println(\"Enter serial number: \");\r\n      String serialNumber = input.readLine().strip();\r\n      System.out.println(\"Enter name: \");\r\n      String name = input.readLine().strip();\r\n      System.out.println(\"Enter group: \");\r\n      int group = Integer.parseInt(input.readLine().strip());\r\n      newStudent = new Student(serialNumber, name, group);\r\n      newStudent.setId(id);\r\n    } catch (IOException | NumberFormatException ex) {\r\n      // ex.printStackTrace();\r\n    }\r\n    return newStudent;\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/UI/Console.java	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ src/main/java/UI/Console.java	(date 1583222779984)
+@@ -58,10 +58,10 @@
+    */
+   private void printMenu(){
+     System.out.println("Menu options:");
+-    System.out.println("1. Add student");
+-    System.out.println("2. Print students");
+-    System.out.println("3. Add lab problem");
+-    System.out.println("4. Print lab problems");
++    System.out.println("1. add student");
++    System.out.println("2. print students");
++    System.out.println("3. add lab problem");
++    System.out.println("4. print lab problems");
+     System.out.println("5. exit");
+   }
+ 
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/vcs.xml	(date 1583138585611)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <bytecodeTargetLevel>\r\n      <module name=\"mpp.main\" target=\"1.8\" />\r\n      <module name=\"mpp.test\" target=\"1.8\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/compiler.xml	(date 1591694570223)
+@@ -2,6 +2,7 @@
+ <project version="4">
+   <component name="CompilerConfiguration">
+     <bytecodeTargetLevel>
++      <module name="mpp" target="1.8" />
+       <module name="mpp.main" target="1.8" />
+       <module name="mpp.test" target="1.8" />
+     </bytecodeTargetLevel>
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/mpp.iml\" filepath=\"$PROJECT_DIR$/mpp.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/mpp.main.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/mpp.main.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/mpp.test.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/mpp.test.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/modules.xml	(date 1583138588470)
+@@ -2,7 +2,8 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/mpp.iml" filepath="$PROJECT_DIR$/mpp.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/Lab2_2.iml" filepath="$PROJECT_DIR$/.idea/Lab2_2.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mpp.iml" filepath="$PROJECT_DIR$/.idea/modules/mpp.iml" />
+       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mpp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mpp.main.iml" />
+       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mpp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/mpp.test.iml" />
+     </modules>
+Index: .idea/modules/mpp.test.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"ExternalSystem\" externalSystem=\"GRADLE\" externalSystemModuleGroup=\"td.ubb\" externalSystemModuleType=\"sourceSet\" externalSystemModuleVersion=\"1.0-SNAPSHOT\" linkedProjectId=\"mpp:test\" linkedProjectPath=\"$MODULE_DIR$/../..\" rootProjectPath=\"$MODULE_DIR$/../..\" />\r\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_1_8\">\r\n    <output-test url=\"file://$MODULE_DIR$/../../build/classes/java/test\" />\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$/../../src/test\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../../src/test/java\" isTestSource=\"true\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../../src/test/resources\" type=\"java-test-resource\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"module\" module-name=\"mpp.main\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: org.junit.jupiter:junit-jupiter-api:5.4.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: org.junit.platform:junit-platform-commons:1.4.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: org.apiguardian:apiguardian-api:1.0.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"RUNTIME\" name=\"Gradle: org.junit.jupiter:junit-jupiter-engine:5.4.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: org.opentest4j:opentest4j:1.1.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"RUNTIME\" name=\"Gradle: org.junit.platform:junit-platform-engine:1.4.2\" level=\"project\" />\r\n    <orderEntry type=\"module-library\" scope=\"TEST\">\r\n      <library name=\"JUnit5.4\">\r\n        <CLASSES>\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar!/\" />\r\n        </CLASSES>\r\n        <JAVADOC />\r\n        <SOURCES />\r\n      </library>\r\n    </orderEntry>\r\n  </component>\r\n  <component name=\"TestModuleProperties\" production-module=\"mpp.main\" />\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules/mpp.test.iml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/modules/mpp.test.iml	(date 1591694643349)
+@@ -1,12 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="td.ubb" externalSystemModuleType="sourceSet" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId="mpp:test" linkedProjectPath="$MODULE_DIR$/../.." rootProjectPath="$MODULE_DIR$/../.." />
++<module external.linked.project.id="mpp:test" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="td.ubb" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+     <output-test url="file://$MODULE_DIR$/../../build/classes/java/test" />
+     <exclude-output />
+     <content url="file://$MODULE_DIR$/../../src/test">
+       <sourceFolder url="file://$MODULE_DIR$/../../src/test/java" isTestSource="true" />
+-      <sourceFolder url="file://$MODULE_DIR$/../../src/test/resources" type="java-test-resource" />
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />
+@@ -14,25 +12,9 @@
+     <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.4.2" level="project" />
+     <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.4.2" level="project" />
+     <orderEntry type="library" name="Gradle: org.apiguardian:apiguardian-api:1.0.0" level="project" />
+-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.4.2" level="project" />
+     <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.1.1" level="project" />
++    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.4.2" level="project" />
+     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.4.2" level="project" />
+-    <orderEntry type="module-library" scope="TEST">
+-      <library name="JUnit5.4">
+-        <CLASSES>
+-          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar!/" />
+-          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar!/" />
+-          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar!/" />
+-          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar!/" />
+-          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar!/" />
+-          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar!/" />
+-          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar!/" />
+-          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar!/" />
+-        </CLASSES>
+-        <JAVADOC />
+-        <SOURCES />
+-      </library>
+-    </orderEntry>
+   </component>
+   <component name="TestModuleProperties" production-module="mpp.main" />
+ </module>
+\ No newline at end of file
+Index: .idea/modules/mpp.main.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"ExternalSystem\" externalSystem=\"GRADLE\" externalSystemModuleGroup=\"td.ubb\" externalSystemModuleType=\"sourceSet\" externalSystemModuleVersion=\"1.0-SNAPSHOT\" linkedProjectId=\"mpp:main\" linkedProjectPath=\"$MODULE_DIR$/../..\" rootProjectPath=\"$MODULE_DIR$/../..\" />\r\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_11\">\r\n    <output url=\"file://$MODULE_DIR$/../../build/classes/java/main\" />\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$/../../src/main\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../../src/main/java\" isTestSource=\"false\" />\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../../src/main/resources\" type=\"java-resource\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules/mpp.main.iml	(revision 36b9564023d29d2563c131eb958acf99a78507ed)
++++ .idea/modules/mpp.main.iml	(date 1591694643342)
+@@ -1,12 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="td.ubb" externalSystemModuleType="sourceSet" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId="mpp:main" linkedProjectPath="$MODULE_DIR$/../.." rootProjectPath="$MODULE_DIR$/../.." />
+-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
++<module external.linked.project.id="mpp:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="td.ubb" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+     <output url="file://$MODULE_DIR$/../../build/classes/java/main" />
+     <exclude-output />
+     <content url="file://$MODULE_DIR$/../../src/main">
+       <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
+     </content>
+     <orderEntry type="inheritedJdk" />
+     <orderEntry type="sourceFolder" forTests="false" />

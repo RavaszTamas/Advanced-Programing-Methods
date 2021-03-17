@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.ubb.catalog.web.controller.LabProblemControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-06-02T14:49:10" hostname="tamas-pc" time="3.173">
+  <properties/>
+  <testcase name="createLabProblem" classname="ro.ubb.catalog.web.controller.LabProblemControllerTest" time="3.009"/>
+  <testcase name="getLabProblems" classname="ro.ubb.catalog.web.controller.LabProblemControllerTest" time="0.059"/>
+  <testcase name="deleteLabProblem" classname="ro.ubb.catalog.web.controller.LabProblemControllerTest" time="0.064"/>
+  <testcase name="updateLabProblem" classname="ro.ubb.catalog.web.controller.LabProblemControllerTest" time="0.038"/>
+  <system-out><![CDATA[2020-06-02T17:49:13,120 TRACE [Test worker]: LabProblemController                 - saveLabProblem - method entered labProblemDto=LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1) 
+2020-06-02T17:49:13,145 TRACE [Test worker]: LabProblemController                 - saveLabProblem - method finished: result=LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1) 
+2020-06-02T17:49:13,302 TRACE [Test worker]: LabProblemController                 - getAllLabProblems - method entered 
+2020-06-02T17:49:13,303 TRACE [Test worker]: LabProblemController                 - getAllLabProblems - method finished: result=LabProblemsDto(labProblems=[LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1), LabProblemDto(super=BaseDto(id=2), problemNumber=2, description=desc2)]) 
+2020-06-02T17:49:13,379 TRACE [Test worker]: LabProblemController                 - deleteLabProblem - method entered: id=1 
+2020-06-02T17:49:13,379 TRACE [Test worker]: LabProblemController                 - deleteLabProblem - method finished 
+2020-06-02T17:49:13,421 TRACE [Test worker]: LabProblemController                 - updateLabProblem - method entered: labProblemDto=LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1) 
+2020-06-02T17:49:13,422 TRACE [Test worker]: LabProblemController                 - updateLabProblem - method finished: result=LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1) 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

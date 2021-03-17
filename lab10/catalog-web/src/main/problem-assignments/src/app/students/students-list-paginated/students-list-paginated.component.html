@@ -1,0 +1,45 @@
+<div *ngIf="selectedStudent">
+  <h2>
+    {{selectedStudent.name | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<h2>Students list</h2>
+<div class="container">
+  <table class="table students">
+    <thead>
+    <tr>
+      <th (click)="sortByNumeric('id')">ID</th>
+      <th (click)="sortBy('name')">Name</th>
+      <th (click)="sortBy('serialNumber')">Serial number</th>
+      <th (click)="sortByNumeric('groupNumber')">Group number</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let student of students | studentFilter:searchTerm "
+        [class.selected]="student === selectedStudent"
+        (click)="onSelect(student)">
+      <td>{{student.id}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.serialNumber}}</td>
+      <td>{{student.groupNumber}}</td>
+      <button
+        [class.delete]="true"
+        (click)="deleteStudent(student);$event.stopPropagation()">delete
+      </button>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search By Name" style="width: 300px" [(ngModel)]="searchTerm"/>
+  </div>
+  <hr>
+  <ul class="nav nav-pills">
+    <li class="nav-item" *ngFor="let p of pages; let i = index">
+      <a class="nav-link" href="" (click)="setPage(i,$event)">{{i}}</a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ro.ubb.catalog.web.controller.StudentControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-06-02T14:49:13" hostname="tamas-pc" time="0.249">
+  <properties/>
+  <testcase name="deleteStudent" classname="ro.ubb.catalog.web.controller.StudentControllerTest" time="0.118"/>
+  <testcase name="getStudents" classname="ro.ubb.catalog.web.controller.StudentControllerTest" time="0.045"/>
+  <testcase name="createStudent" classname="ro.ubb.catalog.web.controller.StudentControllerTest" time="0.042"/>
+  <testcase name="updateStudent" classname="ro.ubb.catalog.web.controller.StudentControllerTest" time="0.044"/>
+  <system-out><![CDATA[2020-06-02T17:49:13,549 TRACE [Test worker]: StudentController                    - deleteStudent - method entered: id=1 
+2020-06-02T17:49:13,549 TRACE [Test worker]: StudentController                    - deleteStudent - method finished 
+2020-06-02T17:49:13,578 TRACE [Test worker]: StudentController                    - getAllStudents - method entered 
+2020-06-02T17:49:13,579 TRACE [Test worker]: StudentController                    - getAllStudents - method finished: result=StudentsDto(students=[StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1), StudentDto(super=BaseDto(id=2), serialNumber=sn2, name=s2, groupNumber=2)]) 
+2020-06-02T17:49:13,631 TRACE [Test worker]: StudentController                    - saveStudent - method entered studentDto=StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1) 
+2020-06-02T17:49:13,633 TRACE [Test worker]: StudentController                    - saveStudent - method finished: result=StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1) 
+2020-06-02T17:49:13,673 TRACE [Test worker]: StudentController                    - updateStudent - method entered: studentDto=StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1) 
+2020-06-02T17:49:13,675 TRACE [Test worker]: StudentController                    - updateStudent - method finished: result=StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1) 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

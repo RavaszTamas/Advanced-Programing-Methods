@@ -1,0 +1,4 @@
+rootProject.name = 'lab13'
+include 'core'
+include 'web'
+

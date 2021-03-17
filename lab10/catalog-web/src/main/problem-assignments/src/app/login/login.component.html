@@ -1,0 +1,30 @@
+<form [formGroup]="loginForm" class="container">
+
+  <h2>Login</h2>
+  <div class="form-group">
+    <label>Username</label>
+    <input #username type="text" formControlName="username" class="form-control"
+           [ngClass]="{ 'is-invalid': submitted && getLoginForm.username.errors }"/>
+    <div *ngIf="submitted && getLoginForm.username.errors" class="invalid-feedback">
+      <div *ngIf="getLoginForm.username.errors.required">Username is required</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Group number</label>
+    <input #password type="password" formControlName="password" class="form-control"
+           [ngClass]="{ 'is-invalid': submitted && getLoginForm.password.errors }"/>
+    <div *ngIf="submitted && getLoginForm.password.errors" class="invalid-feedback">
+      <div *ngIf="getLoginForm.password.errors.required">Group number is required</div>
+      <div *ngIf="getLoginForm.password.errors.pattern">Group number must be a positive integer</div>
+    </div>
+  </div>
+
+  <button class="btn btn-success" (click)="login(username.value, password.value)">
+    Login
+  </button>
+  <button class="btn-danger btn" (click)="goBack()">Go back</button>
+  <hr>
+  <span>{{statusString}}</span>
+</form>
+
+

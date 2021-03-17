@@ -1,0 +1,49 @@
+<div *ngIf="selectedAssignment">
+  <h2>
+    {{selectedAssignment.studentID}}->{{selectedAssignment.labProblemID}}was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+
+<h2>Assignment list</h2>
+<div class="container">
+  <table class="table assignment">
+    <thead>
+    <tr>
+      <th (click)="sortByNumeric('id')">ID</th>
+      <th (click)="sortByNumeric('studentID')">Student ID</th>
+      <th (click)="sortByNumeric('labProblemID')">Lab problem ID</th>
+      <th (click)="sortByNumeric('grade')">Grade</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let assignment of assignments | assignmentFilter:searchTerm "
+        [class.selected]="assignment === selectedAssignment"
+        (click)="onSelect(assignment)">
+      <td>{{assignment.id}}</td>
+      <td>{{assignment.studentID}}</td>
+      <td>{{assignment.labProblemID}}</td>
+      <td>{{assignment.grade}}</td>
+      <td>
+        <button
+          [class.delete]="true"
+          (click)="deleteAssignment(assignment);$event.stopPropagation()">delete
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <ul class="nav nav-pills">
+    <li class="nav-item" *ngFor="let p of pages; let i = index">
+      <a class="nav-link" href="" (click)="setPage(i,$event)">{{i}}</a>
+    </li>
+  </ul>
+
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search By Grade" style="width: 300px"
+           [(ngModel)]="searchTerm"/>
+  </div>
+
+</div>

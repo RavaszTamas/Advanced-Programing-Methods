@@ -1,0 +1,30 @@
+<div *ngIf="selectedAssignment">
+  <p>Give a grade to the assignment {{selectedAssignment.studentID}}->{{selectedAssignment.labProblemID}}!</p>
+  <br>
+  <label>Grade: </label>
+  <input #grade type="number" min="0">
+  <button (click)="submitGrade(grade.value)" name="grade">Submit</button>
+  <br>
+  {{statusString}}
+</div>
+<p>All the assigned lab problems for the student:</p>
+<ul *ngIf="assignmentsForStudent">
+  <li *ngFor="let assignment of assignmentsForStudent"
+      (click)="selectAssignment(assignment)">
+    Problem description:{{getLabProblem(assignment.labProblemID).description}}
+    <span *ngIf="assignment.grade"> Grade: {{assignment.grade}}</span>
+    <button
+      [class.delete]="true"
+      (click)="deleteAssignment(assignment);$event.stopPropagation()">delete
+    </button>
+  </li>
+</ul>
+
+<p>All the lab problems available:</p>
+<ul *ngIf="allTheLabProblemsAvailable">
+  <li *ngFor="let labProblem of allTheLabProblemsAvailable"
+      (click)="addSelectedLabProblem(labProblem)">
+    {{labProblem.problemNumber}}. Descirption:
+    {{labProblem.description}}
+  </li>
+</ul>

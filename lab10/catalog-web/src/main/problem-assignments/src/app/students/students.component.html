@@ -1,0 +1,7 @@
+<div class="container">
+  <app-students-list-paginated #myList (addedNewEntityEvent)="myList.getStudents()"></app-students-list-paginated>
+  <button (click)="addNewStudent()">Add New Student</button>
+  <button (click)="goToFilter()">Filter students</button>
+  <button (click)="goToSort()">Sort students</button>
+  <button (click)="goToHome()">Go to home page</button>
+</div>

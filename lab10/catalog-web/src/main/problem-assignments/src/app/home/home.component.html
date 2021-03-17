@@ -1,0 +1,17 @@
+<nav  class="navbar container d-flex justify-content-center">
+  <button class="btn btn-danger" (click)="logout()" >Logout</button>
+  <a class="btn btn-dark" routerLink="/students" routerLinkActive="active">Students list</a>
+  <a class="btn btn-dark" routerLink="/labproblems" routerLinkActive="active">Lab problems list</a>
+  <a *ngIf="isTeacher()" class="btn btn-dark" routerLink="/assignments" routerLinkActive="active">Assignment list</a>
+  <a *ngIf="isTeacher()" class="btn btn-dark" routerLink="/reports" routerLinkActive="active">Reports</a>
+</nav>
+
+
+<div class="container">
+
+  <h1>Welcome to student management!</h1>
+  <p class="">
+    You can perform various actions here
+  </p>
+
+</div>

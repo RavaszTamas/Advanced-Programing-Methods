@@ -1,0 +1,46 @@
+<form [formGroup]="assignmentFormGroup" class="container">
+
+  <div class="form-group">
+    <label> Student ID:</label>
+    <input #studentid placeholder="studentID" formControlName="studentID" type="number" class="form-control"
+           [ngClass]="{ 'is-invalid': submitted && getAssignmentForm.studentID.errors }">
+    <div *ngIf="submitted && getAssignmentForm.grade.errors" class="invalid-feedback">
+      <div *ngIf="getAssignmentForm.studentID.errors.required">Student ID is required</div>
+      <div *ngIf="getAssignmentForm.studentID.errors.min">Student ID must be at least 0</div>
+      <div *ngIf="getAssignmentForm.studentID.errors.pattern">Student ID must be a positive integer</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label> Student ID:</label>
+    <input #labproblemid placeholder="labProblemID" formControlName="labProblemID" type="number" class="form-control"
+           [ngClass]="{ 'is-invalid': submitted && getAssignmentForm.studentID.errors }">
+    <div *ngIf="submitted && getAssignmentForm.grade.errors" class="invalid-feedback">
+      <div *ngIf="getAssignmentForm.labProblemID.errors.required">Lab problem ID is required</div>
+      <div *ngIf="getAssignmentForm.labProblemID.errors.min">Lab problem ID must be at least 0</div>
+      <div *ngIf="getAssignmentForm.labProblemID.errors.pattern">Lab problem ID must be a positive integer</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label> Grade:</label>
+    <input #grade placeholder="grade" formControlName="grade" type="number" class="form-control"
+           [ngClass]="{ 'is-invalid': submitted && getAssignmentForm.grade.errors }">
+    <div *ngIf="submitted && getAssignmentForm.grade.errors" class="invalid-feedback">
+      <div *ngIf="getAssignmentForm.grade.errors.required">Grade is required</div>
+      <div *ngIf="getAssignmentForm.grade.errors.min">Grade must be at least 0</div>
+      <div *ngIf="getAssignmentForm.grade.errors.max">Grade must be maximum 10</div>
+      <div *ngIf="getAssignmentForm.grade.errors.pattern">Grade must be a positive integer</div>
+    </div>
+  </div>
+
+
+  <button (click)="saveAssignment(studentid.value,labproblemid.value,grade.value)">
+    Save
+  </button>
+  <button (click)="goBack()">Return to list</button>
+  <hr>
+  {{statusString}}
+</form>
+
+

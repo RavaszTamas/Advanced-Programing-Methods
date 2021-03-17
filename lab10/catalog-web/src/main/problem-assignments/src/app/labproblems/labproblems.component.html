@@ -1,0 +1,8 @@
+<div class="container">
+  <app-labproblems-list-paginated #myList
+                                  (addedNewEntityEvent)="myList.getLabProblems()"></app-labproblems-list-paginated>
+  <button (click)="addNewLabProblem()">Add New Lab Problem</button>
+  <button (click)="goToFilter()">Filter lab problems</button>
+  <button (click)="goToSort()">Sort lab problems</button>
+  <button (click)="goToHome()">Go to home page</button>
+</div>

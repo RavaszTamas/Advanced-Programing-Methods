@@ -1,0 +1,29 @@
+<div *ngIf="selectedStudent">
+  <h2>
+    {{selectedStudent.name | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<h2>Students list</h2>
+<div class="container">
+  <ol class="students">
+    <li *ngFor="let student of students"
+        [class.selected]="student === selectedStudent"
+        (click)="onSelect(student)">
+      ID:{{student.id}}
+      {{student.name}}
+      <button
+        [class.delete]="true"
+        (click)="deleteStudent(student);$event.stopPropagation()">delete
+      </button>
+    </li>
+  </ol>
+  <hr>
+  <input #filterNumber type="number" [defaultValue]="0" min="0" pattern="^[A-Za-z0-9]+$">
+  <button (click)="getStudentsByGroupNumber(filterNumber.value)">Filter by group number</button>
+  <br>
+  <input #filterName [defaultValue]="" pattern="^[A-Za-z]+$">
+  <button (click)="getStudentsByName(filterName.value)">Filter by Name</button>
+
+</div>

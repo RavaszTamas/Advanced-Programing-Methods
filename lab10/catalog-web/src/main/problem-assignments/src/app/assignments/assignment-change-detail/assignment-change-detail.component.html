@@ -1,0 +1,29 @@
+<div *ngIf="assignment" class="container">
+  <form [formGroup]="assignmentFormGroup">
+    <h2> Assignment {{assignment.studentID}} -> {{assignment.labProblemID}} details</h2>
+    <div>
+      <label> Student ID:</label> {{assignment.studentID}}
+      <!--    <input [(ngModel)]="assignment.studentID" placeholder="student id" type="number" min="0">-->
+    </div>
+    <div>
+      <label> Lab problem ID:</label> {{assignment.studentID}}
+      <!--    <input [(ngModel)]="assignment.studentID" placeholder="student id" type="number" min="0">-->
+    </div>
+    <div class="form-group">
+      <label> Grade:</label> {{assignment.grade}}
+      <input [(ngModel)]="assignment.grade" placeholder="grade" formControlName="grade" type="number"
+             class="form-control" [ngClass]="{ 'is-invalid': submitted && getAssignmentForm.grade.errors }">
+      <div *ngIf="submitted && getAssignmentForm.grade.errors" class="invalid-feedback">
+        <div *ngIf="getAssignmentForm.grade.errors.required">Grade is required</div>
+        <div *ngIf="getAssignmentForm.grade.errors.min">Grade must be at least 0</div>
+        <div *ngIf="getAssignmentForm.grade.errors.max">Grade must be maximum 10</div>
+        <div *ngIf="getAssignmentForm.grade.errors.pattern">Grade must be a positive integer</div>
+      </div>
+
+    </div>
+    <button (click)="goBack()">Back</button>
+    <button (click)="save()">Save</button>
+    <hr>
+    {{statusString}}
+  </form>
+</div>

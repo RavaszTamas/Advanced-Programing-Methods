@@ -1,0 +1,21 @@
+<div *ngIf="selectedLabProblem">
+  <h2>
+    {{selectedLabProblem.description | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<h2>Lab problems list</h2>
+<ol class="labProblems">
+  <li *ngFor="let labProblem of labProblems"
+      [class.selected]="labProblem === selectedLabProblem"
+      (click)="onSelect(labProblem)">
+    ID: {{labProblem.id}}
+    Description: {{labProblem.description}}
+    <button
+      [class.delete]="true"
+      (click)="deleteLabProblem(labProblem);$event.stopPropagation()">delete
+    </button>
+
+  </li>
+</ol>

@@ -1,0 +1,29 @@
+<div *ngIf="selectedLabProblem">
+  <h2>
+    {{selectedLabProblem.description | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<h2>Students list</h2>
+<div class="container">
+  <ol class="students">
+    <li *ngFor="let labproblem of labProblems"
+        [class.selected]="labproblem === selectedLabProblem"
+        (click)="onSelect(labproblem)">
+      ID:{{labproblem.id}}
+      {{labproblem.description}}
+      <button
+        [class.delete]="true"
+        (click)="deleteLabProblem(labproblem);$event.stopPropagation()">delete
+      </button>
+    </li>
+  </ol>
+  <hr>
+  <input #filterNumber type="number" [defaultValue]="0" min="0" pattern="^[A-Za-z0-9]+$">
+  <button (click)="getLabProblemsFilteredByProblemNumber(filterNumber.value)">Filter by problem number</button>
+  <br>
+  <input #filterDescription [defaultValue]="" pattern="^[A-Za-z]+$">
+  <button (click)="getLabProblemsFilteredByDescription(filterDescription.value)">Filter by Description</button>
+
+</div>

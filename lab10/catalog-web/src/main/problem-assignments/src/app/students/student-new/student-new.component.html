@@ -1,0 +1,40 @@
+<form [formGroup]="studentForm" class="container">
+
+  <h2>Add new student</h2>
+  <div class="form-group">
+    <label>Name</label>
+    <input #name type="text" formControlName="name" class="form-control"
+           [ngClass]="{ 'is-invalid': submitted && getStudentForm.name.errors }"/>
+    <div *ngIf="submitted && getStudentForm.name.errors" class="invalid-feedback">
+      <div *ngIf="getStudentForm.name.errors.required">Name is required</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Serial number</label>
+    <input #serialNumber type="text" formControlName="serialNumber" class="form-control"
+           [ngClass]="{ 'is-invalid': submitted && getStudentForm.serialNumber.errors }"/>
+    <div *ngIf="submitted && getStudentForm.serialNumber.errors" class="invalid-feedback">
+      <div *ngIf="getStudentForm.serialNumber.errors.required">Serial number is required</div>
+      <div *ngIf="getStudentForm.serialNumber.errors.pattern">Serial number can only contain numbers and digits</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Group number</label>
+    <input #groupNumber type="number" formControlName="groupNumber" class="form-control"
+           [ngClass]="{ 'is-invalid': submitted && getStudentForm.groupNumber.errors }"/>
+    <div *ngIf="submitted && getStudentForm.groupNumber.errors" class="invalid-feedback">
+      <div *ngIf="getStudentForm.groupNumber.errors.required">Group number is required</div>
+      <div *ngIf="getStudentForm.groupNumber.errors.min">Group number must be at least 0</div>
+      <div *ngIf="getStudentForm.groupNumber.errors.pattern">Group number must be a positive integer</div>
+    </div>
+  </div>
+
+  <button (click)="saveStudent(serialNumber.value,name.value, groupNumber.value)">
+    Save
+  </button>
+  <button (click)="goBack()">Return to list</button>
+  <hr>
+  <span>{{statusString}}</span>
+</form>
+
+

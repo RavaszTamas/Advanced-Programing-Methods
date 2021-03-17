@@ -1,0 +1,28 @@
+<div *ngIf="selectedAssignment">
+  <h2>
+    {{selectedAssignment.grade.toString()| uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<h2>Assignment list</h2>
+<div class="container">
+  <ol class="students">
+    <li *ngFor="let assignment of assignments"
+        [class.selected]="assignment === selectedAssignment"
+        (click)="onSelect(assignment)">
+      ID:{{assignment.id}}
+      Assigned: Student id:
+      {{assignment.studentID}}-> Lab problem id:{{assignment.labProblemID}}
+      <button
+        [class.delete]="true"
+        (click)="deleteLabProblem(assignment);$event.stopPropagation()">delete
+      </button>
+    </li>
+  </ol>
+  <hr>
+  <input #sortString type="text">
+  <button (click)="getLabProblemsSorted(sortString.value)">Sort</button>
+  <hr>
+  {{this.errorMessage}}
+</div>

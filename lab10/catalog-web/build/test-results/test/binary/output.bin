@@ -1,0 +1,18 @@
+Ë2020-06-02T17:49:13,120 TRACE [Test worker]: LabProblemController                 - saveLabProblem - method entered labProblemDto=LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1) 
+Æ2020-06-02T17:49:13,145 TRACE [Test worker]: LabProblemController                 - saveLabProblem - method finished: result=LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1) 
+y2020-06-02T17:49:13,302 TRACE [Test worker]: LabProblemController                 - getAllLabProblems - method entered 
+¯2020-06-02T17:49:13,303 TRACE [Test worker]: LabProblemController                 - getAllLabProblems - method finished: result=LabProblemsDto(labProblems=[LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1), LabProblemDto(super=BaseDto(id=2), problemNumber=2, description=desc2)]) 
+~2020-06-02T17:49:13,379 TRACE [Test worker]: LabProblemController                 - deleteLabProblem - method entered: id=1 
+y2020-06-02T17:49:13,379 TRACE [Test worker]: LabProblemController                 - deleteLabProblem - method finished 
+Î2020-06-02T17:49:13,421 TRACE [Test worker]: LabProblemController                 - updateLabProblem - method entered: labProblemDto=LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1) 
+È2020-06-02T17:49:13,422 TRACE [Test worker]: LabProblemController                 - updateLabProblem - method finished: result=LabProblemDto(super=BaseDto(id=1), problemNumber=1, description=desc1) 
+{2020-06-02T17:49:13,549 TRACE [Test worker]: StudentController                    - deleteStudent - method entered: id=1 
+v2020-06-02T17:49:13,549 TRACE [Test worker]: StudentController                    - deleteStudent - method finished 
+v2020-06-02T17:49:13,578 TRACE [Test worker]: StudentController                    - getAllStudents - method entered 
+¬2020-06-02T17:49:13,579 TRACE [Test worker]: StudentController                    - getAllStudents - method finished: result=StudentsDto(students=[StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1), StudentDto(super=BaseDto(id=2), serialNumber=sn2, name=s2, groupNumber=2)]) 
+	È2020-06-02T17:49:13,631 TRACE [Test worker]: StudentController                    - saveStudent - method entered studentDto=StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1) 
+	Æ2020-06-02T17:49:13,633 TRACE [Test worker]: StudentController                    - saveStudent - method finished: result=StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1) 
+
+Ë2020-06-02T17:49:13,673 TRACE [Test worker]: StudentController                    - updateStudent - method entered: studentDto=StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1) 
+
+È2020-06-02T17:49:13,675 TRACE [Test worker]: StudentController                    - updateStudent - method finished: result=StudentDto(super=BaseDto(id=1), serialNumber=sn1, name=s1, groupNumber=1) 

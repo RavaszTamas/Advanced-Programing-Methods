@@ -1,0 +1,28 @@
+<div *ngIf="labProblem" class="container">
+  <form [formGroup]="labProblemForm">
+    <h2> Lab problem {{labProblem.description}} details</h2>
+    <div class="form-group">
+      <label>Problem number</label> {{labProblem.problemNumber}}
+      <input [(ngModel)]="labProblem.problemNumber" type="number" formControlName="problemNumber" class="form-control"
+             [ngClass]="{ 'is-invalid': submitted && getLabProblemForm.problemNumber.errors }"/>
+      <div *ngIf="submitted && getLabProblemForm.problemNumber.errors" class="invalid-feedback">
+        <div *ngIf="getLabProblemForm.problemNumber.errors.required">Problem number is required</div>
+        <div *ngIf="getLabProblemForm.problemNumber.errors.min">Problem number must be at least 0</div>
+        <div *ngIf="getLabProblemForm.problemNumber.errors.pattern">Problem number must be a positive integer</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Description</label> {{labProblem.description}}
+      <input [(ngModel)]="labProblem.description" type="text" formControlName="description" class="form-control"
+             [ngClass]="{ 'is-invalid': submitted && getLabProblemForm.description.errors }"/>
+      <div *ngIf="submitted && getLabProblemForm.description.errors" class="invalid-feedback">
+        <div *ngIf="getLabProblemForm.description.errors.required">Name is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button (click)="goBack()">Back</button>
+      <button (click)="save()">Save</button>
+    </div>
+  </form>
+  {{statusString}}
+</div>

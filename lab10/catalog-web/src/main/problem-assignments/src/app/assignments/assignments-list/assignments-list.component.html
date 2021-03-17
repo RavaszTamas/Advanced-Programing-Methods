@@ -1,0 +1,20 @@
+<div *ngIf="selectedAssignment">
+  <h2>
+    {{selectedAssignment.studentID}}->{{selectedAssignment.labProblemID}}was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+
+<h2>Assignment list</h2>
+<ol class="assignment">
+  <li *ngFor="let assignment of assignments"
+      [class.selected]="assignment === selectedAssignment"
+      (click)="onSelect(assignment)">
+    Student: {{assignment.studentID}}, Lab problem: {{assignment.labProblemID}}, grade: {{assignment.grade}}
+    <button
+      [class.delete]="true"
+      (click)="deleteAssignment(assignment);$event.stopPropagation()">delete
+    </button>
+  </li>
+</ol>
